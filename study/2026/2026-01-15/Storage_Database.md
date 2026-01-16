@@ -4,8 +4,9 @@
 
 ### S3 기본 개념
 
-- 객체 스토리지
+- 객체 스토리지(Simple Storage Service)
 - 무제한 확장
+- 정적 웹사이트 호스팅 가능
 - 99.999999999% 내구성 (11 9’s)
 
 ### S3 주요 특징
@@ -20,10 +21,10 @@
 
 | 클래스 | 용도 |
 | --- | --- |
-| Standard | 자주 접근 |
+| Standard | 자주 접근하는 데이터 |
 | IA | 가끔 접근 |
 | One Zone-IA | 단일 AZ |
-| Glacier | 장기 보관 |
+| Glacier | 장기 보관(저렴하지만 꺼낼 때 오래 걸림) |
 | Glacier Deep Archive | 초저비용 |
 
 ### 📝 출제
@@ -60,13 +61,13 @@
 
 - MySQL, PostgreSQL, Oracle 등
 - 자동 백업
-- Multi-AZ 지원
+- Multi-AZ(다른 데이터 센터에 복제본, 장애 대비용) 지원
 
 ### Aurora
 
 - AWS 자체 DB
 - RDS 대비 빠름
-- 고가용성 기본 제공
+- 고가용성 기본 제공(3개 가용 영역에 6개 복제본 생성)
 
 ---
 

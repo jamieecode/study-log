@@ -91,8 +91,8 @@
 
 **종류**
 
-- ALB: HTTP/HTTPS (웹 서비스)
-- NLB: TCP, 초고성능
+- ALB: HTTP/HTTPS (웹 서비스), L7, 경로 기반 라우팅 가능(프론트/백 분리)
+- NLB: TCP, 초고성능, L4
 - CLB: 레거시
 
 ### Auto Scaling
@@ -117,8 +117,8 @@
 
 | 유형 | 특징 |
 | --- | --- |
-| Public Subnet | Internet Gateway 연결 |
-| Private Subnet | 외부 직접 접근 불가 |
+| Public Subnet | Internet Gateway 연결, 외부 접근 가능, 웹 서버 배치 |
+| Private Subnet | 외부 직접 접근 불가, DB나 중요 로직 배치 |
 
 ### 인터넷 통신
 
